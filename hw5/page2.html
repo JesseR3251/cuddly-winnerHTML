@@ -1,0 +1,66 @@
+﻿<!--
+   Image map page here.
+   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title and metadata -->
+    <title> Assignment 5, Page 2 </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Image Map, page 2">
+    <meta name="keywords" content="Image maps">
+    <meta name="author" content="Jesse Robinson">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <!-- Internal CSS-->
+    <style>
+        body {
+            font-family: 'Georgia';
+            background-color: #ffffff;
+            color: black;
+        }
+
+        h1 {
+            color: #61bae4;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--Top header section-->
+    <div class="topnav" id="myTopnav">
+        <a href="page1.html">Home</a>
+    </div>
+    <hr>
+    <header>
+        <!--         header section-->
+        <h1>
+            <!-- Largest Header Size: Title -->
+            Clickable Lemonade Stand
+        </h1>
+    </header>
+    <main>
+        <!--        Begin image map here. Creating the image to use-->
+        <img src="LemonadeStand.jpg" alt="LemonadeStand" usemap="#LemonadeStand">
+        <map name="LemonadeStand">
+<!--            Setting the polygon attributes for the duck-->
+            <area alt="Duck" title="Duck" href="https://en.wikipedia.org/wiki/Duck" coords="60,179,101,178,132,192,142,229,173,244,178,266,163,275,132,275,115,283,135,302,139,345,123,349,106,364,121,378,112,390,97,382,81,363,80,378,62,394,72,362,58,356,46,376,17,336,15,307,45,275,37,248,40,207,49,191" shape="poly">
+<!--            Setting the circle attributes for the lemonade-->
+            <area alt="Lemonade" title="Lemonade" href="https://en.wikipedia.org/wiki/Lemonade" coords="271,231,31" shape="circle">
+<!--            Created a large rectangle that covers about half the lemonade stand.-->
+            <area alt="Lemonade Stand" title="Lemonade Stand" href="https://en.wikipedia.org/wiki/Lemonade_Stand" coords="344,33,520,400" shape="rect">
+          </map>
+        <!--        Blockquote with two paragraphs.-->
+        <blockquote>
+            <p>
+                Image maps can prove to be quite useful for plenty of different reasons. Primarily it is used to identify multiple elements in an image. This can be the case in my example, where the duck can be identified by hovering over it with the mouse. Another example of image maps are for photographs with groups of people. Instead of saying "From left to right, John, Alex.. etc" one can use an image map. The image map can even take the user to another website when one clicks on the person.
+            </p>
+            <p>
+                While it does have many uses, I do not see it used to often in the websites I frequently visit. I think image maps can make a comeback if the image and css make it more interactive and entertaining to click on the different elements in the image. Other than that, sometimes image maps are not that obvious they are clickable to the user and can often be skipped over entirely. The website design would need to make that very clear.
+            </p>
+        </blockquote>
+    </main>
+</body>
+
+</html>

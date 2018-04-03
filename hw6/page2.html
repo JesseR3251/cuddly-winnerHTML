@@ -1,0 +1,61 @@
+﻿<!--
+   Image map page here.
+   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title and metadata -->
+    <title> Assignment 6, Page 2 </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Javascript, Page 2">
+    <meta name="keywords" content="Image maps">
+    <meta name="author" content="Jesse Robinson">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <!-- Internal CSS-->
+    <style>
+    </style>
+</head>
+
+<body>
+    <!--Top header section-->
+    <div class="topnav" id="myTopnav">
+        <a href="page1.html">Home</a>
+    </div>
+    <hr>
+    <header>
+        <!--         header section-->
+        <h1>
+            <!-- Largest Header Size: Title -->
+            Javascript Example
+        </h1>
+    </header>
+    <main>
+        <!--Javascript Example-->
+        <button type="button" onclick="myFunction()">Click Me!</button>
+        <p id="demo" style="color: white">This is a demonstration.</p>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            }
+        </script>
+        <br>
+        <!--        Blockquote with two paragraphs.-->
+        <blockquote>
+            <p>
+                The Javascript I included on this page is very basic, but it demonstrates one use of how Javascript can be used. In the example above, clicking the button changes the text "this is a demonstration" to "Hello JavaScript!". They do this by linking the button click to a Javascript function. When the function is called, the text is displayed.
+            </p>
+            <p>
+                This example is also known as <strong>Client-side Javascript</strong> or <em>CSJS</em>. Client side Javascript enhances and changes web pages. This is quite different from <strong>Server-side Javascript</strong> or <em>SSJS</em> where the Javascript would allow one to access databases, servers, etc. They both use Javascript as the primary language; however, their purposes are different.
+            </p>
+            <p>
+                In Javascript, objects are organized into a model known as the <strong>Document Object Model</strong> or <em>DOM</em>. The DOM is structured as a tree where the document itself is at the top of the tree. According to the W3C, the DOM allows programs and scripts to dynamically access and update content, structure, or style of a document. In other words, this concept of being able to update any page via Javascript or any other language is known as <strong>Dynamic HTML</strong> or <em>DHTML</em>.
+            </p>
+            <p>
+                <strong>Application Programming interface</strong> or <em>API</em> are very popular in the world of web development. APIs are applications that allow other programs to communicate with each other. As an example, Google's APIs allow web developers to implement Google apps such as Calendar, Maps, and Youtube into their websites. There are tons of other APIs as well from popular websites such as Facebook, Yahoo, Twitter, etc.
+            </p>
+        </blockquote>
+    </main>
+</body>
+
+</html>

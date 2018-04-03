@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title and metadata -->
+    <title> Lab 6 Page 1 </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jesse Robinson's Lab 6">
+    <meta name="keywords" content="Jesse Robinson, Lab 6, OSI Reference Model, NTA, Internet Architecture, Chapter 1, Chapter 3">
+    <meta name="author" content="Jesse Robinson">
+    <!--linking style sheet here  -->
+    <style>
+        Body {
+            background-color: #79afd8;
+            color: #000060;
+        }
+
+        blockquote.text {
+            font-family: helvetica;
+        }
+
+        table {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            border: 1px solid;
+            text-align: left;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<!--Navigation-->
+
+<body>
+    <!--       Begin header-->
+    <header>
+        <h1>
+            <!-- Largest Header Size: Title -->
+            Networking Components and Standards
+        </h1>
+
+    </header>
+    <main>
+        <br>
+        <!--seperation with hr-->
+        <hr>
+        <!--        h3 header-->
+        <blockquote class="text">
+            <h2>
+                OSI Model
+            </h2>
+            <!-- Using Blockquote tag -->
+                <!--Talking about the OSI Model here-->
+                <!--                using some strong and em tags here as per requirements-->
+                The <em>OSI</em> or <strong>Open Systems Interconnection</strong> is a model that explains how an application should communicate over a given network. This model is a top level view of the relationships between the seven OSI layers. The seven layers are described in the table below: <br>
+
+                <table style="width: 75%">
+                    <tr>
+                        <td colspan="2"><strong>Seven Layers of the OSI Reference Model</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Layer 7: Application</td>
+                        <td>The services an application should be able to use.</td>
+                    </tr>
+                    <tr>
+                        <td>Layer 6: Presentation</td>
+                        <td>The layer in which the operating system transforms data from one format to another.</td>
+                    </tr>
+                    <tr>
+                        <td>Layer 5: Session</td>
+                        <td>The authentication and reconnection of a given user session.</td>
+                    </tr>
+                    <tr>
+                        <td>Layer 4: Transport</td>
+                        <td>The transport layer includes the delivery of packets and validation of errors.</td>
+                    </tr>
+                    <tr>
+                        <td>Layer 3: Network</td>
+                        <td>This layer routes the data based on the IP address.</td>
+                    </tr>
+                    <tr>
+                        <td>Layer 2: Data-link</td>
+                        <td>The layer involved in connecting to the physical layer. It uses two sub-layers: Logical Link Control Layer, and the Media Access Control Layer.</td>
+                    </tr>
+                    <tr>
+                        <td>Layer 1: Physical</td>
+                        <td>The physical layer uses hardware to move data from the internet service provider.</td>
+                    </tr>
+                </table>
+                <h2>
+                    Internet Architecture
+                </h2>
+                <br> The Internet Architecture uses a model that is very similar to the OSI model. The internet architecture uses just four of the layers from the OSI model. These layers are: Application, Transport, Internet, and Network Access Layer.
+                <ul>
+                    <li> The <strong>network access layer</strong> relates to the physical and data link layers of the OSI model. It looks at the Operating system's drivers, the NIC (network card) and the physical connections made.
+                    </li>
+                    <li>
+                        The <strong>internet layer</strong> is used for addressing and routing packets via the TCP/IP network.
+                    </li>
+                    <li>
+                        The <strong>transport layer</strong> utilizes the information between two hosts. It uses two different protocols: TCP and UDP.
+                    </li>
+                    <li>
+                        The <strong>application layer</strong> uses the presentation and application layers of the OSI model. It relies on protocols such <em>FTP, SMTP, and SNMP</em>.
+                    </li>
+                </ul>
+                <img src="InternetArchitecture.gif" alt="OSI Model">
+                <br>
+                <a href="http://searchnetworking.techtarget.com/definition/OSI" target="_blank">For more information about the OSI model, click here</a>
+                <br>
+                <br>
+        </blockquote>
+    </main>
+    <footer>
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <em>
+               <!--                footer section, with copyright-->
+               site design / logo &copy; 2017 Jesse Robinson
+               <br>
+               <!--                email address-->
+               <a href="mailto:robij105@mail.broward.edu"> email contact </a>
+            </em>
+        </p>
+    </footer>
+</body>
+
+</html>

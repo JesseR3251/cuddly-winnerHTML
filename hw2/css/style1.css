@@ -1,0 +1,15 @@
+/*changing font, font color, and background*/
+body
+{
+
+font-family:"Georgia";
+background-color:#e6e9f0;
+color: #252839; 
+}
+
+/*Some formatting for the nav at the top of all the pages*/
+
+.topnav {
+    color:black;
+    font-size: 14pt;
+}

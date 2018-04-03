@@ -1,0 +1,5 @@
+The video must be about a topic in lesson 8 of the Internet Business Associate book
+	Lesson 8 Summary: Right to be forgotten, Spam, Cookies, Authentication, Encryption, Secure Protocols, Malware
+				Virus Detection, Spyware, Typosquatting, Firewalls
+	Lesson 9 Summary: Mass email and texting services, newsgroups, list servers, telnet, FTP, Virtual Network Computing (VNC), P2P Networks
+The audio must be about a topic in lesson 9 of the Internet Business Associate book

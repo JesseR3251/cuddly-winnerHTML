@@ -1,0 +1,45 @@
+/*changing font, font color, and background*/
+body
+{
+    font-family:'Georgia';
+    background-color:#1d96bb;
+    color: #ffffff; 
+}
+
+
+/*Some formatting for the nav at the top of all the pages*/
+
+.topnav {
+    display: block;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+/*Formatting table*/
+ table {
+     border-collapse: collapse;
+     background-color: #6d91c5;
+     color: #ffffff;
+      border: 1px solid black; 
+     width: 75%;
+     text-align: center;
+     vertical-align: middle;
+     table-layout: fixed;
+    }
+caption{
+     background-color: #6d91c5;
+    color:#ffffff;
+     border: 1px solid black; 
+}
+td {
+    border: 1px solid black;
+         text-align: center;
+     vertical-align: middle;
+}
+th {
+    border: 1px solid black;
+         text-align: center;
+     vertical-align: middle;
+}

@@ -1,0 +1,15 @@
+/*changing font, font color, and background*/
+body {
+    font-family: 'Georgia';
+    background-color: #1395ba;
+    color: #05182a;
+}
+/*Changed footer color*/
+footer {
+    color: #002a15;
+}
+hr {
+    border-color: #05182a;
+}
+
+

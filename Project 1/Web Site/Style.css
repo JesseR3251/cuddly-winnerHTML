@@ -1,0 +1,86 @@
+/*Formating the blockquote to use a specific font, font size, and text alignment    */
+blockquote {
+            font-family: "Helvetica", sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+/*Formating the form to use a specific font, font size, and did a lot of padding    */
+      form {
+            font-family: "Helvetica", sans-serif;
+            font-size: 20px;
+           padding-top: 15px;
+          padding-bottom: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+/*Creating a custom heading 1 style that stands out using arial black. I added some margin on the top.*/
+        h1 {
+            font-family: "Arial Black", sans-serif;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+/*This moves my form to the left of the page to make some room for the image*/
+        fieldset {
+            float: left;
+
+        }
+/*Added a border*/
+table
+{
+    border: solid;
+    
+}
+/*    My usual footer I put on all the home pages of my web pages, it's centered this time though..*/
+        footer {
+            bottom: 10px;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+        }
+/*Your recommendation helped here, it pushed all my text below the navigation bar. */
+        main {
+            padding: 20px;
+            margin-top: 60px;
+            height: 250px;
+        }
+/*This is my basic structure for the navigation. Basically, it removes the bullet points, removes all margins, and padding, moves the text, and gives it a nice color*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #013571;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 10%;
+            width: 100%;
+        }
+/*Some more formatting that moves the links to the other pages to the right so my name on the left stands out.*/
+        li {
+            float: right;
+            font-family: "Arial", sans-serif;
+            line-height: 85px;
+            margin-bottom: -20px;
+        }
+/*This is a class I created based on the li element. It makes my name stand out with arial black and pushes it to the left.*/
+        li.Name {
+            font-family: "Arial Black", sans-serif;
+            font-size: 45px;
+            float: left;
+        }
+/*Makes the nav text white, and centered.*/
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+
+        li a:hover {
+            background-color: #6bb9f0;
+        }

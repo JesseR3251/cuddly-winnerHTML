@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Title and metadata -->  
+      <title> Lab 3: Titles </title>
+      <meta charset = "UTF-8">
+      <meta name = "description" content = "Jesse Robinson's Lab 3 Assignment where I create tables">
+      <meta name = "keywords" content = "Jesse Robinson, Lab 3, Table, CSS, HTML, Text, Images">
+      <meta name = "author" content = "Jesse Robinson">
+      <!--css styles: Add border around tables       -->
+      <style>
+         table {border: 1px solid black;}
+         th {border: 1px solid black;}
+         td {border: 1px solid black;}
+         body {font-family: "arial";}
+         body {background-color: azure;}
+         /*           Some table styles, and body styles*/
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>
+            <!-- Largest Header Size: Title -->
+            Creating Tables is Fun!
+         </h1>
+         <!-- Image of table structure -->
+         <img src = "https://blackfyre.ninja/storage/Headline%20images/html_table_structure.gif" alt = "Table Structure">
+      </header>
+      <hr>
+      <main>
+         <!-- Table explanation with strong, em, href tags, and escape characters -->	 
+         <h2>
+            What Exactly is A Table?
+         </h2>
+         <p>
+            A <em>table</em> is an incredibly useful tool used to organize and display data in a way that makes sense. A table consists of rows and columns. The columns are usually the header for the information displayed at the level below it, the rows. Rows will show data related to the header. For example, the column "video format" indicated the data below (the rows) will show video formats such as .wav or .mov. Tables can be created in <strong> HTML </strong> by using the <em>&lt;table&gt;</em> tag. Furthermore, you can add the column names by using the &lt;th&gt;, rows with &lt;tr&gt;, and data with &lt;td&gt;.
+            <br>
+            More examples can be see at this link:  
+            <a href="https://www.w3schools.com/html/html_tables.asp" target="HTML Tables"> w3schools. </a>
+         </p>
+         <!-- Table requirement: A table listing various video, audio, and graphics file formats found in Lesson 5 of the Internet Business Associate book.
+            table must include a border
+            table must use th tags for 1st column and td for 2nd -->	
+         <h3>
+            Table Examples in HTML
+         </h3>
+         <!--         Inserting 1st table-->
+         <table>
+            <tr>
+               <th>Video</th>
+               <th>Audio</th>
+               <th>Graphics</th>
+            </tr>
+            <tr>
+               <td>.mov</td>
+               <td>.mp3</td>
+               <td>.jpg</td>
+            </tr>
+            <tr>
+               <td>.avi</td>
+               <td>.ogg</td>
+               <td>.gif</td>
+            </tr>
+            <tr>
+               <td>.mp4</td>
+               <td>.wav</td>
+               <td>.png</td>
+            </tr>
+         </table>
+         <br>
+         <hr>
+         <!--           Dividing the two tables-->
+         <br>
+         <!--          Table two using colspan 2 on defition, creating an example in the second column.
+            Table requrements A table listing the database terms from lesson 6 of the Internet Business Associate book.
+            Table must include a colspan or rowspan to merge some cells
+            Table must include a caption using the caption tag
+            -->
+         <table >
+            <caption><strong>Database Terms</strong></caption>
+            <tr>
+               <th>Term</th>
+               <th colspan="2">Definition</th>
+            </tr>
+            <tr>
+               <td>Primary Key</td>
+               <td>A field that uniquely identifies all the tables records</td>
+               <td>Ex: FlightID in Flights table</td>
+            </tr>
+            <tr>
+               <td>Foreign Key</td>
+               <td>A field that uniquely identifies another row in a different table using the first tables primary key</td>
+               <td>Ex: FlightID in Customer table</td>
+            </tr>
+            <tr>
+               <td>Structured Query Language (SQL)</td>
+               <td>Database language used interact with the database management system.</td>
+               <td>Ex: SELECT * FROM Customer</td>
+            </tr>
+            <tr>
+               <td>Database Management System (DBMS)</td>
+               <td>The software involved that stores, retrives, and updates data on a database server.</td>
+               <td>Microsoft SQL Server, Oracle, etc</td>
+            </tr>
+         </table>
+         <!--          end table-->
+      </main>
+      <!-- footer-->             
+      <footer>
+         <br>
+         <br>
+         <br>
+         <!--                Not forgetting email reference, used href for email.-->
+         <address>
+            <em>  site design / logo &copy; 2017 Jesse Robinson </em>
+            <br>
+            <a href="mailto:robij105@mail.broward.edu"> Email Contact </a>
+         </address>
+      </footer>
+   </body>
+</html>

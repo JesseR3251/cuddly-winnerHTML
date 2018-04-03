@@ -1,0 +1,18 @@
+/*changing font, font color, and background*/
+body {
+    font-family: 'Georgia';
+    background-color: #61bae4;
+    color: #ffffff;
+}
+/*Changed footer color*/
+footer {
+    color: #60618b;
+}
+/*Some formatting for the nav at the top of all the pages*/
+.topnav {
+    display: block;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 17px;
+}

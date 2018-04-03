@@ -1,0 +1,126 @@
+﻿<!--
+   Form application starts here.
+   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title and metadata -->
+    <title> Assignment 4, Page 2 </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Application Form, page 2">
+    <meta name="keywords" content="Application Form, Name, Email, Username, password, address, credit card number, bio, photograph">
+    <meta name="author" content="Jesse Robinson">
+    <!--Linking styling sheet, doing lots of different methods of formatting throughout the assignment.-->
+    <!--This keeps some elements of the page consistent with the other-->
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <!-- Internal CSS-->
+    <style>
+        input {
+            height: 5px;
+            padding: 12px 20px;
+        }
+
+        body {
+            font-family: 'Georgia';
+            background-color: #ffffff;
+            color: black;
+        }
+
+        h1 {
+            color: #61bae4;
+        }
+
+        fieldset {
+            padding: 10px 10px;
+            line-height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--Top header section-->
+    <div class="topnav" id="myTopnav">
+        <a href="page1.html">Home</a>
+    </div>
+    <hr>
+    <header>
+        <!--         header section-->
+        <h1>
+            <!-- Largest Header Size: Title -->
+            Application Form
+        </h1>
+    </header>
+    <main>
+        <!--using ciw script, Using a lot of inline styles for each form type to make sure the formatting looks ok-->
+        <!--Using label tags for each label-->
+        <form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="get">
+            <fieldset>
+                <!--using fieldset to group fields together-->
+                <label> First name:</label> <input style="width:12%;" type="text" name="firstname"><br><br>
+                <label>Last name:</label> <input style="width:12%;" type="text" name="lastname"><br><br>
+                <label>Username:</label> <input style="width:12%;" type="text" name="username"><br><br>
+                <!--All text here, password is hidden-->
+                <label>Password:</label>  <input style="width:12%;" type="password" name="password"><br><br>
+                <label>Address:</label> <input style="width:20%;" type="text" name="username"><br><br>
+                Gender: <br>
+                <!--using radial here for gender-->
+                <label>Male</label>
+                <input style="height:20px;" type="radio" name="gender" value="male"><br>
+                <label>Female</label>
+                <input style="height:20px;" type="radio" name="gender" value="female"><br>
+                <label>Prefer not to say</label>
+                <input style="height:20px;" type="radio" name="gender" value="prefersnot"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <!--Billing section-->
+                <h3>Billing Information</h3>
+                <label>Card Number:</label> <input style="width:12%;" type="text" name="ccnum"><br><br>
+                <!--used a &nbsp; to create extra space-->
+                <!--Did something with a drop down for month-->
+                <label>Year:</label> <input style="width:5%;" type="text" name="expyear"> &nbsp; <label>Expiration Month:</label> <select style="width:10%;" name="expmonth" id="expmonth">
+                    <option value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <!--Made securtity code slightly smaller-->
+                <br><br><label>Security Code:</label> <input style="width:5%;"name="securitycode"><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h3>Getting to Know You</h3>
+                <!--again, grouping with fieldset, also use of strong. I add some cool border effect to the textarea-->
+                <label>Describe yourself to us in a <strong>few</strong> sentences:</label>
+                <textarea style="width:75%;height: 150px; border: 2px solid #ccc;" name="bio">
+        </textarea>
+                <br>
+                <br>
+                <!--Picture upload-->
+                <label>Please upload a picture of <em>yourself</em> below:</label> <br>
+                <input style="width:20%;height:100%;" type="file" name="picture">
+                <br>
+
+                <!--Use of checkboxes for emailing types-->
+                <label>Would you like to be emailed on any of the following? <em>(Select One)</em></label> <br>
+                <input style="height:20px;" type="checkbox" name="emailtype" value="product" checked>Product Updates<br>
+                <input style="height:20px;" type="checkbox" name="emailtype" value="promo" checked>Promotions<br>
+                <input style="height:20px;" type="checkbox" name="emailtype" value="nothanks"> No Thanks<br>
+                <br>
+            </fieldset>
+            <br>
+            <!--submit button with some different formatting to make it look somewhat modern i guess. Also reset button-->
+            <input style="width:35%; height:100%;" type="submit" value="Submit">&nbsp;&nbsp;&nbsp; <input style="width:35%; height:100%" type="reset">
+            <br>
+        </form>
+
+    </main>
+</body>
+</html>

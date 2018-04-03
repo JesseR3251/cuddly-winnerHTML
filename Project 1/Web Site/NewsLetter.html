@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<!--Begin head section which includes meta data, linking css.-->
+
+<head>
+    <title> Home </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jesse Robinson's home page">
+    <meta name="keywords" content="Jesse Robinson, About me, Travel, Newsletter">
+    <meta name="author" content="Jesse Robinson">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<!--Begin body here, created the top nav-->
+<body>
+    <ul>
+        <li class="Name"><a href="Home.html">JESSE ROBINSON</a></li>
+        <li><a href="NewsLetter.html">NEWSLETTER</a></li>
+        <li><a href="Travel.html">TRAVEL</a></li>
+        <li><a href="AboutMe.html">ABOUT ME</a></li>
+    </ul>
+    <main>
+<!--        Heading size 1 here-->
+        <h1>
+            News Letter
+        </h1>
+        <blockquote>
+<!--            Heading size 3 here as a subtitle-->
+            <h3>
+                Stay up to date with my free newsletter
+                <br> Weekly updates on technology and other great topics!
+            </h3>
+        </blockquote>
+<!--        Using fieldset to group all my form elements together-->
+        <fieldset>
+<!--            Using the process.pl from the book as usual.-->
+            <form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="get">
+                <!--using fieldset to group fields together-->
+                <label> First name:</label> <input style="width:30%;" type="text" name="firstname"><br><br>
+                <label>Last name:</label> <input style="width:30%;" type="text" name="lastname"><br><br>
+                <label>Email:</label> <input style="width:50%;" type="text" name="email"><br><br>
+                <!--using radial here for gender-->
+                <label>Male</label>
+                <input style="height:20px;" type="radio" name="gender" value="male"><br>
+                <label>Female</label>
+                <input style="height:20px;" type="radio" name="gender" value="female"><br>
+                <label>Prefer not to say</label>
+                <input style="height:20px;" type="radio" name="gender" value="prefersnot"><br>
+                <h3>Getting to Know You</h3>
+                <!--again, grouping with fieldset, also use of strong. I add some cool border effect to the textarea-->
+                <label style="float:left">Describe yourself to us in a <strong>few</strong> sentences:</label>
+                <textarea style="width:75%;height: 150px; border: 2px solid #ccc;" name="bio">
+        </textarea>
+                <br>
+                <!--Use of checkboxes for emailing types-->
+                <label>Would you like to be emailed on any of the following? <em>(Select One)</em></label> <br>
+                <input style="height:20px;" type="checkbox" name="emailtype" value="product" checked>Receive Every Update<br>
+                <input style="height:20px;" type="checkbox" name="emailtype" value="promo">Receive Only Major Updates<br>
+                <br>
+                <input style="width:35%; height:200%;" type="submit" value="Submit">&nbsp;&nbsp;&nbsp; <input style="width:35%; height:100%" type="reset">
+            </form>
+        </fieldset>
+<!--        Image here with the update -->
+        <img style="margin: auto; display: block;" src="Update.png" alt="Update" width="600" height="400">
+    </main>
+</body>
+
+</html>

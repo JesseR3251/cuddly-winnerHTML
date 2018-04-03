@@ -1,0 +1,150 @@
+﻿<!--
+   Creating web forms
+      -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title and metadata -->
+    <title> Lab 4 </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Jesse Robinson's lab 4 showing how to use web forms">
+    <meta name="keywords" content="Jesse Robinson, web form">
+    <meta name="author" content="Jesse Robinson">
+    <!--       internal css for resizing image on page-->
+    <style>
+        /*Resizing image here*/
+        img.resizepage1 {
+            max-width: 35%;
+            max-height: 35%;
+        }
+        /*Formatting body tag*/
+        body {
+            font-family: 'Georgia';
+            background-color: #1d96bb;
+            color: #ffffff;
+        }
+        /*Formatting the form*/ 
+        form {
+            border: solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--       Begin header-->
+    <header>
+        <h1>
+            <!-- Largest Header Size: Title -->
+            My Web Form
+        </h1>
+        <hr>
+    </header>
+    <main>
+        <blockquote>
+            <!-- Using Blockquote tag -->
+            <h2>
+                Swim Club Signup
+            </h2>
+            <img class="resizepage1" src="https://cdn.pixabay.com/photo/2012/04/13/21/31/fish-33712_960_720.png" alt="Fish Cartoon">
+            <p>
+                <!--header size 3 here--> 
+                <h3>
+                    Welcome to The Swimming Club Signup Page!
+                </h3>
+                Here you will find all the information you need if you or someone you know is interested in becoming a proficient swimmer, or if you simply enjoy swimming! <br>
+                We only have a few requirements, so please read the requirements and use the <em>signup form</em> below.
+                <br>
+                <br>
+                <strong>Requirements:</strong>
+                <!--starting numbered list here-->
+                <ol>
+                    <li>You have read some of the basic rules of swimming from the following link: <a href="http://www.nbcolympics.com/news/swimming-101-rules" target="_blank"> Rules</a>. </li>
+                    <li>Fill out the <strong>form</strong> below.</li>
+                    <li>Wait for our response! We will review your submission and get back to you in a few days!</li>
+                </ol>
+            <!--Starting the form tag here-->
+            <!--For action: use the CIW CGI script from the lesson-->
+            <form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="get">
+                First name:<br>
+                <!--use of input tag-->
+                <input type="text" name="firstname"><br>
+                Last name:<br>
+                <input type="text" name="lastname">
+                <br>
+                <br>
+                <!--radial tags-->
+                Your gender:
+                <br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <br>
+                <!--checkbox tags-->
+                Please indicate if you need any of the the following:
+                <br>
+                <input type="checkbox" name="equipment" value="goggles"> Goggles<br>
+                <input type="checkbox" name="equipment" value="swimsuit"> Swim Suit<br>
+                <input type="checkbox" name="equipment" value="fins"> Fins<br>
+                <input type="checkbox" name="equipment" value="towels"> Towels<br>
+                <input type="checkbox" name="equipment" value="none"> None of the above<br>
+                <br>
+                <!--Drop down tag-->
+                What is your current swimming level?
+                <br>
+                <select>
+                    <option value="new">New</option>
+                    <option value="inexperienced">Inexperienced</option>
+                    <option value="efficient">Efficient</option>
+                    <option value="expert">Expert</option>
+                </select>
+                <br>
+                <br>
+                <!--text area tag-->
+                Tell us about your swimming experience. <br>
+                If you have none, tell us why you would like to start swimming?<br>
+                <textarea rows="4" cols="75">
+                    </textarea>
+                <br>
+                <br>
+                <!--Password tag-->
+                Create a username and password: <br>
+                User name:<br>
+                <input type="text" name="username"><br>
+                User password:<br>
+                <input type="password" name="psw">
+                <br>
+                <br>
+                <!--File upload tag-->
+                Upload your resume:  <br>
+                <!--submit button-->
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+                <br>
+                <br>
+                <br>
+                <!--Submit and reset buttons-->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+            <br>
+        </blockquote>
+    </main>
+    <footer>
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <em>
+                <!--footer section-->
+                site design / logo &copy; 2017 Jesse Robinson
+                <br>
+                <!--Email link-->
+                <a href="mailto:robij105@mail.broward.edu"> email contact </a>
+            </em>
+        </p>
+    </footer>
+</body>
+</html>

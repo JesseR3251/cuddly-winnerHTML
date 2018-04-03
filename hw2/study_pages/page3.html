@@ -1,0 +1,61 @@
+<!--
+   page3.html:
+   Must link to page2 and back to page1
+   Must discuss DNS, what a fully qualified domain name is, what a domain name server does, what a virtual domain is, and what a shared domain is
+   Must contain an image
+   -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Title and metadata -->  
+      <title> Assignment 2, Page 3 </title>
+      <meta charset = "UTF-8">
+      <meta name = "description" content = "Page 3 discusses DNS, fully qualified domain names, domain name servers, virtual domain, and shared domains">
+      <meta name = "keywords" content = "Jesse Robinson, DNS, Domain Name, Domain Name Server, Virtual Domain, Shared Domains">
+      <meta name = "author" content = "Jesse Robinson">
+      <!--    resizing the dns image here-->
+      <style>
+         img.resize {
+         max-width:35%;
+         max-height:35%;
+         }
+      </style>
+      <!--           linking style sheet-->
+      <link rel="stylesheet" type="text/css" href="../css/style1.css">
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <a href="../page1.html">Home</a>
+         <a href="../page2.html">Protocols</a>
+      </div>
+      <header>
+         <h1>
+            <!-- Largest Header Size: Title -->
+            DNS, Domain Names, and more!
+         </h1>
+         <img class = "resize" src = "../assets/DomainName.jpg" alt = "Domain Name">
+      </header>
+      <hr>
+      <main>
+         <!-- DNS, domain names, etc. and em, strong tags -->	 
+         <h2>
+            DNS
+         </h2>
+         <p>
+            <strong>DNS</strong> or <em> Domain Name Server</em> can be thought of as the internet's phone book. In a phone book, one would associate a person's name with a phone number; similarly, with DNS it is an IP address associated with a website name. DNS is especially helpful because otherwise users would need to input an IP address instead of a familiar name such as Google.
+            <br>
+            <br>
+            <strong>Virtual Domains</strong> can be thought of an extension of the domain name system. With a virtual domain system, one can have multiple domain names on a single server. This has numerous benefits including centralizing all resources to one web server.
+            <br>
+            <br>
+            <Strong> Shared hosting</Strong> is a type of web hosting where the internet service provider hosts all of one's web sites with each having its own internet domain name from one server. Shared hosting is used a lot because it is a cheap alternative for starting businesses with less traffic. 
+            <br>
+            <br>
+            Domain names are stored at a central registry where host companies such as GoDaddy and Internet Service Providers such as ATT interact with. DNS information is updated frequently. Typically, when one registers their IP address for a domain name it takes about 36 hours or less.
+            <br>
+            <br>
+            <strong>FQDN</strong> otherwise known as a <em>Fully Qualified Domain Name</em> would be the entire domain name for a host. In this example, "SomeServer.SomeWebsite.com" SomeServer is the hostname, SomeWebsite is the domain name, and the .com is the top level domain. Very rarely will a user see the host name. When visiting google.com there is much uncertainty what the hostname really is. Websites that are not fully qualified are known as <em>Partially qualified domain names</em>.
+         </p>
+      </main>
+   </body>
+</html>

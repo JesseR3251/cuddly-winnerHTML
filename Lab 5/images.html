@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Title and metadata -->
+      <title> Lab 5, Page 1 </title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Jesse Robinson's Lab 5">
+      <meta name="keywords" content="Jesse Robinson, Lab 5, video, audio">
+      <meta name="author" content="Jesse Robinson">
+      <!--linking style sheet here  -->
+      <style>
+         Body{
+         background-color: lightgrey;
+         }
+         blockquote.text{
+         font-family: georgia;
+         }
+      </style>
+   </head>
+   <!--Navigation-->
+   <body>
+      <!--       Begin header-->
+      <header>
+         <h1>
+            <!-- Largest Header Size: Title -->
+            Video and Audio with No Plug-In’s – COOL!
+         </h1>
+         <hr>
+      </header>
+      <main>
+         <!--        h2 header-->
+         <h2>Chapter 8 Video</h2>
+         <!--        Video with width, height, controls, and poster -->
+         <video width="600" height="368" controls poster="PosterImg.PNG">
+            <!--     two different video files here converted on the webpage-->
+            <source src="Chapter8VideoPresentation.webm" type="video/mp4">
+            <source src="Chapter8VideoPresentation.webm" type="video/ogg">
+            <!--error message -->
+            Something went wrong with the Chapter 8 Presentation... Please try again later.
+         </video>
+         <br>
+         <!--seperation with hr-->
+         <hr>
+         <!--        h2 header-->
+         <h2>Chapter 9 Audio</h2>
+         <!--audio with controls-->
+         <audio controls>
+            <!--    Using two different formats here-->
+            <source src="Chapter%209.m4a" type="audio/ogg">
+            <source src="Chapter%209.m4a" type="audio/mpeg">
+            <!--    error message-->
+            Something went wrong with the Chapter 9 audio... Please try again later.
+         </audio>
+         <!--Adding some seperation here with hr-->
+         <hr>
+         <!--        h3 header-->
+         <h3>Video and Audio Tags</h3>
+         <blockquote class="text">
+            <!-- Using Blockquote tag -->
+            <p>
+               <!--Talking about the audio and video here-->
+               <!--                using some strong and em tags here as per requirements-->
+               For the chapter 8 video, I created a PowerPoint presentation and exported it to a 1080p video. The default file type for the video when exported was <em>MP4</em> which I then converted using the html tags to <em>OGG</em>. From there, I added some attributes to the video tag such as <strong>width</strong>, <strong>height</strong>, <strong>poster</strong>, <strong>controls</strong> and the error message if no video is displayed for some reason. The width and height took some playing around with to make it fit the page right, but it did not take too long to figure it out. The poster image I used was snipped from the end of the presentation. I did not use any extra software in the process, as the html converted it on the web page (unless I'm missing something). <br>
+               The chapter 9 audio I recorded using the Windows 10 application, <strong>Voice Recorder</strong> which saved as <em>M4A</em>. Instead of using video tags, I used audio tags. I enabled the controls and added an error message. The audio is being converted to two different file types in the html, One as <em>OGG</em>, and the other as <em>mpeg</em>. <br>
+               <br>
+            </p>
+         </blockquote>
+      </main>
+      <footer>
+         <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <em>
+               <!--                footer section, with copyright-->
+               site design / logo &copy; 2017 Jesse Robinson
+               <br>
+               <!--                email address-->
+               <a href="mailto:robij105@mail.broward.edu"> email contact </a>
+            </em>
+         </p>
+      </footer>
+   </body>
+</html>
